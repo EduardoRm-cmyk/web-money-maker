@@ -342,13 +342,13 @@ function Index() {
   );
 }
 
-function StepCard({ number, title, description, delay = 0 }: { number: string; title: string; description: string; delay?: number }) {
+function StepCard({ number, title, description }: { number: string; title: string; description: string }) {
   return (
-    <Reveal delay={delay} className="rounded-2xl border border-border bg-card p-8">
+    <div className="rounded-2xl border border-border bg-card p-8">
       <span className="mb-4 block font-mono text-3xl font-bold text-brand-gold/50">{number}</span>
       <h3 className="mb-3 text-xl font-bold">{title}</h3>
       <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
-    </Reveal>
+    </div>
   );
 }
 
