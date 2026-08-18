@@ -79,7 +79,7 @@ function Index() {
           </div>
         </div>
 
-        <Reveal className="mx-auto mt-14 max-w-5xl overflow-hidden rounded-3xl border border-border shadow-2xl shadow-brand-deep/10">
+        <div className="mx-auto mt-14 max-w-5xl overflow-hidden rounded-3xl border border-border shadow-2xl shadow-brand-deep/10">
           <img
             src={heroBg}
             alt="Web personalizada mostrada en una laptop sobre un escritorio con luz cálida"
@@ -87,7 +87,7 @@ function Index() {
             width={1600}
             height={1008}
           />
-        </Reveal>
+        </div>
       </section>
 
       {/* PROBLEMA */}
