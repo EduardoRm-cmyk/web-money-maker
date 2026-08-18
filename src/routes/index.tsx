@@ -103,16 +103,14 @@ function Index() {
               "Pagaste por una plantilla que se parece a la de todo el mundo.",
               "Te da pena mandar tu link, así que terminas mandando el Instagram.",
               "Nadie te escribe desde la web, aunque la gente entre.",
-            ].map((item, i) => (
-              <Reveal
-                as="li"
-                delay={i * 90}
+            ].map((item) => (
+              <li
                 key={item}
                 className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 text-sm leading-relaxed sm:text-base"
               >
                 <X className="mt-0.5 size-5 shrink-0 text-destructive/70" />
                 {item}
-              </Reveal>
+              </li>
             ))}
           </ul>
           <p className="mt-10 text-center text-base font-semibold text-brand-deep">
@@ -172,8 +170,8 @@ function Index() {
           </div>
           <div className="grid gap-6 sm:grid-cols-3">
             <StepCard number="01" title="Escuchamos" description="30 minutos para entender tu negocio, tu cliente y tu meta." />
-            <StepCard number="02" title="Diseñamos" description="Te mostramos la propuesta y ajustamos hasta que digas 'es esta'." delay={120} />
-            <StepCard number="03" title="Lanzamos" description="Publicamos tu web con dominio, hosting y todo funcionando." delay={240} />
+            <StepCard number="02" title="Diseñamos" description="Te mostramos la propuesta y ajustamos hasta que digas 'es esta'." />
+            <StepCard number="03" title="Lanzamos" description="Publicamos tu web con dominio, hosting y todo funcionando." />
           </div>
         </div>
       </section>
@@ -344,13 +342,13 @@ function Index() {
   );
 }
 
-function StepCard({ number, title, description, delay = 0 }: { number: string; title: string; description: string; delay?: number }) {
+function StepCard({ number, title, description }: { number: string; title: string; description: string }) {
   return (
-    <Reveal delay={delay} className="rounded-2xl border border-border bg-card p-8">
+    <div className="rounded-2xl border border-border bg-card p-8">
       <span className="mb-4 block font-mono text-3xl font-bold text-brand-gold/50">{number}</span>
       <h3 className="mb-3 text-xl font-bold">{title}</h3>
       <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
-    </Reveal>
+    </div>
   );
 }
 
