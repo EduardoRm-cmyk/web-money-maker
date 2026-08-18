@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Check, X, Mail, Shield, Clock, Sparkles, Star } from "lucide-react";
 import heroBg from "../assets/honey-hero.jpg";
 import stackImg from "../assets/honey-stack.jpg";
+import { Reveal } from "@/components/Reveal";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -78,7 +79,7 @@ function Index() {
           </div>
         </div>
 
-        <div className="mx-auto mt-14 max-w-5xl overflow-hidden rounded-3xl border border-border shadow-2xl shadow-brand-deep/10">
+        <Reveal className="mx-auto mt-14 max-w-5xl overflow-hidden rounded-3xl border border-border shadow-2xl shadow-brand-deep/10">
           <img
             src={heroBg}
             alt="Web personalizada mostrada en una laptop sobre un escritorio con luz cálida"
@@ -86,7 +87,7 @@ function Index() {
             width={1600}
             height={1008}
           />
-        </div>
+        </Reveal>
       </section>
 
       {/* PROBLEMA */}
@@ -102,14 +103,16 @@ function Index() {
               "Pagaste por una plantilla que se parece a la de todo el mundo.",
               "Te da pena mandar tu link, así que terminas mandando el Instagram.",
               "Nadie te escribe desde la web, aunque la gente entre.",
-            ].map((item) => (
-              <li
+            ].map((item, i) => (
+              <Reveal
+                as="li"
+                delay={i * 90}
                 key={item}
                 className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 text-sm leading-relaxed sm:text-base"
               >
                 <X className="mt-0.5 size-5 shrink-0 text-destructive/70" />
                 {item}
-              </li>
+              </Reveal>
             ))}
           </ul>
           <p className="mt-10 text-center text-base font-semibold text-brand-deep">
@@ -121,7 +124,7 @@ function Index() {
       {/* SOLUCIÓN */}
       <section id="solucion" className="px-6 py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
-          <div>
+          <Reveal>
             <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">La solución</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
               Una web hecha a mano, diseñada para convertir
@@ -144,8 +147,8 @@ function Index() {
                 </li>
               ))}
             </ul>
-          </div>
-          <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-xl shadow-brand-deep/10">
+          </Reveal>
+          <Reveal delay={120} className="overflow-hidden rounded-3xl border border-border bg-card shadow-xl shadow-brand-deep/10">
             <img
               src={stackImg}
               alt="Ejemplos de webs personalizadas en laptop, tablet y móvil"
@@ -154,7 +157,7 @@ function Index() {
               width={1200}
               height={912}
             />
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -169,8 +172,8 @@ function Index() {
           </div>
           <div className="grid gap-6 sm:grid-cols-3">
             <StepCard number="01" title="Escuchamos" description="30 minutos para entender tu negocio, tu cliente y tu meta." />
-            <StepCard number="02" title="Diseñamos" description="Te mostramos la propuesta y ajustamos hasta que digas 'es esta'." />
-            <StepCard number="03" title="Lanzamos" description="Publicamos tu web con dominio, hosting y todo funcionando." />
+            <StepCard number="02" title="Diseñamos" description="Te mostramos la propuesta y ajustamos hasta que digas 'es esta'." delay={120} />
+            <StepCard number="03" title="Lanzamos" description="Publicamos tu web con dominio, hosting y todo funcionando." delay={240} />
           </div>
         </div>
       </section>
@@ -185,7 +188,7 @@ function Index() {
             </h2>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-brand-gold/40 bg-card shadow-2xl shadow-brand-deep/10">
+          <Reveal className="overflow-hidden rounded-3xl border border-brand-gold/40 bg-card shadow-2xl shadow-brand-deep/10">
             <div className="bg-brand-deep px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-cream">
               Paquete Premium
             </div>
@@ -227,10 +230,10 @@ function Index() {
                 <p className="mt-3 text-xs text-muted-foreground">Puedes pagar en 2 partes: 50% al inicio, 50% al lanzar.</p>
               </div>
             </div>
-          </div>
+          </Reveal>
 
           {/* Garantía */}
-          <div className="mt-8 flex flex-col items-center gap-4 rounded-3xl border border-border bg-brand-cream p-8 text-center sm:flex-row sm:text-left">
+          <Reveal delay={120} className="mt-8 flex flex-col items-center gap-4 rounded-3xl border border-border bg-brand-cream p-8 text-center sm:flex-row sm:text-left">
             <Shield className="size-10 shrink-0 text-brand-gold" />
             <div>
               <h3 className="text-lg font-bold">Garantía "o te gusta, o no pagas"</h3>
@@ -239,7 +242,7 @@ function Index() {
                 preguntas incómodas.
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -259,11 +262,13 @@ function Index() {
               quote="En una semana estaba online. Se ve mejor que la de negocios mucho más grandes que el mío."
               name="Diego R."
               role="Taller mecánico"
+              delay={120}
             />
             <Testimonial
               quote="Lo que más valoro es que escribieron los textos. Yo nunca hubiera sabido qué poner."
               name="Ana P."
               role="Consultora"
+              delay={240}
             />
           </div>
         </div>
@@ -302,7 +307,7 @@ function Index() {
 
       {/* CTA FINAL */}
       <section id="contacto" className="bg-brand-deep px-6 py-24 text-brand-cream">
-        <div className="mx-auto max-w-3xl text-center">
+        <Reveal className="mx-auto max-w-3xl text-center">
           <Sparkles className="mx-auto size-8 text-brand-gold-light" />
           <h2 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-balance">
             Tu competencia ya está online. Tú puedes verte mejor.
@@ -321,7 +326,7 @@ function Index() {
             <Clock className="size-3.5" />
             Quedan 2 cupos este mes
           </p>
-        </div>
+        </Reveal>
       </section>
 
       {/* Footer */}
@@ -339,19 +344,19 @@ function Index() {
   );
 }
 
-function StepCard({ number, title, description }: { number: string; title: string; description: string }) {
+function StepCard({ number, title, description, delay = 0 }: { number: string; title: string; description: string; delay?: number }) {
   return (
-    <div className="rounded-2xl border border-border bg-card p-8">
+    <Reveal delay={delay} className="rounded-2xl border border-border bg-card p-8">
       <span className="mb-4 block font-mono text-3xl font-bold text-brand-gold/50">{number}</span>
       <h3 className="mb-3 text-xl font-bold">{title}</h3>
       <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
-    </div>
+    </Reveal>
   );
 }
 
-function Testimonial({ quote, name, role }: { quote: string; name: string; role: string }) {
+function Testimonial({ quote, name, role, delay = 0 }: { quote: string; name: string; role: string; delay?: number }) {
   return (
-    <figure className="flex h-full flex-col rounded-2xl border border-border bg-card p-7">
+    <Reveal as="figure" delay={delay} className="flex h-full flex-col rounded-2xl border border-border bg-card p-7">
       <div className="mb-4 flex gap-0.5">
         {Array.from({ length: 5 }).map((_, i) => (
           <Star key={i} className="size-4 fill-brand-gold text-brand-gold" />
@@ -362,15 +367,17 @@ function Testimonial({ quote, name, role }: { quote: string; name: string; role:
         <span className="font-semibold">{name}</span>
         <span className="block text-xs text-muted-foreground">{role}</span>
       </figcaption>
-    </figure>
+    </Reveal>
   );
 }
 
 function Faq({ q, a }: { q: string; a: string }) {
   return (
+    <Reveal>
     <details className="group rounded-2xl border border-border bg-card p-5 open:bg-brand-cream">
       <summary className="cursor-pointer list-none text-sm font-semibold sm:text-base">{q}</summary>
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{a}</p>
     </details>
+    </Reveal>
   );
 }
