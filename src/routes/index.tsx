@@ -170,8 +170,8 @@ function Index() {
           </div>
           <div className="grid gap-6 sm:grid-cols-3">
             <StepCard number="01" title="Escuchamos" description="30 minutos para entender tu negocio, tu cliente y tu meta." />
-            <StepCard number="02" title="Diseñamos" description="Te mostramos la propuesta y ajustamos hasta que digas 'es esta'." delay={120} />
-            <StepCard number="03" title="Lanzamos" description="Publicamos tu web con dominio, hosting y todo funcionando." delay={240} />
+            <StepCard number="02" title="Diseñamos" description="Te mostramos la propuesta y ajustamos hasta que digas 'es esta'." />
+            <StepCard number="03" title="Lanzamos" description="Publicamos tu web con dominio, hosting y todo funcionando." />
           </div>
         </div>
       </section>
