@@ -103,16 +103,14 @@ function Index() {
               "Pagaste por una plantilla que se parece a la de todo el mundo.",
               "Te da pena mandar tu link, así que terminas mandando el Instagram.",
               "Nadie te escribe desde la web, aunque la gente entre.",
-            ].map((item, i) => (
-              <Reveal
-                as="li"
-                delay={i * 90}
+            ].map((item) => (
+              <li
                 key={item}
                 className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 text-sm leading-relaxed sm:text-base"
               >
                 <X className="mt-0.5 size-5 shrink-0 text-destructive/70" />
                 {item}
-              </Reveal>
+              </li>
             ))}
           </ul>
           <p className="mt-10 text-center text-base font-semibold text-brand-deep">
