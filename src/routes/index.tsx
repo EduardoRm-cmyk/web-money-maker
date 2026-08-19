@@ -30,7 +30,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Announcement bar */}
       <div className="bg-brand-deep px-4 py-2.5 text-center text-xs font-medium tracking-wide text-brand-cream">
-        Solo tomamos <strong className="font-bold text-brand-gold-light">4 proyectos</strong> por mes · Quedan 2 cupos
+        &nbsp;50% OFF&nbsp;· hasta el 31 de Agosto
       </div>
 
       {/* Header */}
@@ -43,7 +43,7 @@ function Index() {
             href="#contacto"
             className="hidden sm:inline-flex items-center justify-center rounded-full bg-brand-gold px-5 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
           >
-            Quiero mi web
+            Solicitar web
           </a>
         </div>
       </header>
@@ -53,7 +53,7 @@ function Index() {
         <div className="absolute inset-x-0 top-0 -z-10 h-[60%] bg-gradient-to-b from-brand-cream to-transparent" />
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-block rounded-full border border-brand-gold/40 bg-brand-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-brand-deep">
-            Para negocios que ya venden, pero no se ven
+            PARA NEGOCIOS QUE YA EMPEZARON, PERO NO VENDEN
           </span>
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-balance sm:text-5xl md:text-6xl">
             Tu negocio merece una web que{" "}
@@ -63,19 +63,19 @@ function Index() {
             </span>{" "}
             mientras duermes
           </h1>
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Diseñamos y lanzamos tu sitio en <strong className="text-foreground">7 días</strong>: hecho a mano, rápido,
-            impecable en el móvil y pensado para una sola cosa — que te contacten.
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg whitespace-pre-line">
+            Diseño personalizado, subdominio <span className="text-foreground">gratis</span> de por vida y Marketing Digital que triplica tus ventas.{"\n\n\n"}
+            Tu propio Website en menos de <span className="text-foreground">7 días</span>: rápido, impecable en cualquier dispositivo y pensado para una sola cosa — vender y que te contacten.
           </p>
           <div className="mt-9 flex flex-col items-center gap-3">
             <a
               href="#contacto"
               className="group inline-flex w-full max-w-sm items-center justify-center gap-2 rounded-full bg-brand-gold px-8 py-4 text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.03]"
             >
-              Reservar mi cupo
+              Solicitar web
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <span className="text-xs text-muted-foreground">Sin pagos por adelantado · Respuesta en 24h</span>
+            <span className="text-xs text-muted-foreground">· Respuesta en menos de 24h</span>
           </div>
         </div>
 
@@ -98,17 +98,17 @@ function Index() {
           </h2>
           <ul className="mt-10 space-y-4">
             {[
-              "Tienes clientes, pero cuando te buscan en Google no encuentran nada serio.",
-              "Tu web actual se ve bien en la computadora y se rompe en el celular.",
-              "Pagaste por una plantilla que se parece a la de todo el mundo.",
-              "Te da pena mandar tu link, así que terminas mandando el Instagram.",
-              "Nadie te escribe desde la web, aunque la gente entre.",
+              "❌ Tu negocio online no funciona como debería.",
+              "❌ No tienes buenos diseños y ganchos.",
+              "❌ No tienes reconocimiento en internet.",
+              "❌ Tienes pocos interesados.",
+              "❌ Nadie entra a tu web, o no te compran y ni te escriben.",
             ].map((item) => (
               <li
                 key={item}
                 className="flex items-start gap-4 rounded-2xl border border-border bg-card p-5 text-sm leading-relaxed sm:text-base"
               >
-                <X className="mt-0.5 size-5 shrink-0 text-destructive/70" />
+                {/* Removed X icon as per list text containing ❌ */}
                 {item}
               </li>
             ))}
@@ -125,19 +125,18 @@ function Index() {
           <Reveal>
             <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">La solución</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
-              Una web hecha a mano, diseñada para convertir
+              Una web profesional, diseñada para vender y crecer tu comunidad de clientes
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              Nada de constructores genéricos. Escribimos el código, diseñamos cada sección y ordenamos el mensaje para
-              que el visitante haga exactamente lo que quieres: escribirte, agendar o comprar.
+              &nbsp;Escribo el código, diseño cada sección y ordeno el marketing impecable para que los visitantes hagan exactamente lo que quieres: escribirte, agendar o comprar.
             </p>
             <ul className="mt-8 space-y-3">
               {[
-                "Diseño 100% original para tu marca",
-                "Carga en menos de 2 segundos",
-                "Perfecta en móvil, tablet y escritorio",
-                "Textos escritos para vender, no para rellenar",
-                "Optimizada para Google desde el día uno",
+                "Diseño 100% original y personalizado para tu marca",
+                "Carga rápido tu página web",
+                "Textos de marketing (Copywriting) perfectos para vender, atrae cualquier cliente",
+                "Dominio propio o un subdominio gratis permanente",
+                "Atención integral y cambios en cuestión de minutos impulsados por IA",
               ].map((f) => (
                 <li key={f} className="flex items-center gap-3 text-sm sm:text-base">
                   <Check className="size-5 shrink-0 text-brand-gold" />
@@ -169,9 +168,9 @@ function Index() {
             </h2>
           </div>
           <div className="grid gap-6 sm:grid-cols-3">
-            <StepCard number="01" title="Escuchamos" description="30 minutos para entender tu negocio, tu cliente y tu meta." />
-            <StepCard number="02" title="Diseñamos" description="Te mostramos la propuesta y ajustamos hasta que digas 'es esta'." />
-            <StepCard number="03" title="Lanzamos" description="Publicamos tu web con dominio, hosting y todo funcionando." />
+            <StepCard number="01" title="Escucho" description="Entiendo tu negocio, tu cliente y tu meta." />
+            <StepCard number="02" title="Diseño" description="Te muestro la propuesta y lo ajusto hasta que sea perfecta para ti." />
+            <StepCard number="03" title="¡Listo!" description="Publicamos tu web con dominio, hosting y todo funcionando." />
           </div>
         </div>
       </section>
@@ -182,24 +181,24 @@ function Index() {
           <div className="mb-12 text-center">
             <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Todo lo que recibes</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
-              Un solo pago. Todo incluido.
+              3&nbsp; &nbsp;Planes para ti
             </h2>
           </div>
 
           <Reveal className="overflow-hidden rounded-3xl border border-brand-gold/40 bg-card shadow-2xl shadow-brand-deep/10">
             <div className="bg-brand-deep px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-cream">
-              Paquete Premium
+              PAQUETE IDEAL
             </div>
             <div className="p-8 sm:p-10">
               <ul className="space-y-4">
                 {[
-                  ["Web personalizada de 5 secciones", "$700"],
-                  ["Textos de venta escritos por nosotros", "$250"],
-                  ["Optimización móvil y velocidad", "$180"],
-                  ["SEO local + Google", "$150"],
-                  ["Dominio y hosting el primer año", "$120"],
-                  ["Formulario de contacto y WhatsApp", "$90"],
-                  ["30 días de soporte post-lanzamiento", "$150"],
+                  ["Web personalizada de 5 secciones", "\n"],
+                  ["Textos de venta escritos por nosotros", "\n"],
+                  ["Optimización móvil y velocidad", "\n"],
+                  ["SEO local + Google", "\n"],
+                  ["Dominio y hosting el primer año", "\n"],
+                  ["Formulario de contacto y WhatsApp", "\n"],
+                  ["30 días de soporte post-lanzamiento", "\n"],
                 ].map(([item, value]) => (
                   <li key={item} className="flex items-center justify-between gap-4 border-b border-border pb-3 text-sm sm:text-base">
                     <span className="flex items-center gap-3">
@@ -213,19 +212,19 @@ function Index() {
 
               <div className="mt-8 text-center">
                 <p className="text-sm text-muted-foreground">
-                  Valor real: <span className="line-through">$1,640</span>
+                  Antes: <span className="line-through">$159,99</span>
                 </p>
                 <div className="mt-2 flex items-baseline justify-center gap-2">
-                  <span className="text-5xl font-extrabold tracking-tight text-brand-gold sm:text-6xl">$899</span>
+                  <span className="text-5xl font-extrabold tracking-tight text-brand-gold sm:text-6xl">$79,99</span>
                   <span className="text-muted-foreground">/proyecto</span>
                 </div>
                 <a
                   href="#contacto"
                   className="mt-8 block w-full rounded-full bg-brand-gold py-4 text-center text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
                 >
-                  Reservar mi cupo
+                  Comprar
                 </a>
-                <p className="mt-3 text-xs text-muted-foreground">Puedes pagar en 2 partes: 50% al inicio, 50% al lanzar.</p>
+                <p className="mt-3 text-xs text-muted-foreground">50% hasta el 31 de Agosto.</p>
               </div>
             </div>
           </Reveal>
@@ -236,7 +235,7 @@ function Index() {
             <div>
               <h3 className="text-lg font-bold">Garantía "o te gusta, o no pagas"</h3>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                Si después de ver la primera propuesta de diseño no te convence, cancelas y te devolvemos el 100%. Sin
+                Si después de ver la propuesta de diseño no te convence, cancelas y te devuelvo el 100%. Sin
                 preguntas incómodas.
               </p>
             </div>
@@ -308,10 +307,10 @@ function Index() {
         <Reveal className="mx-auto max-w-3xl text-center">
           <Sparkles className="mx-auto size-8 text-brand-gold-light" />
           <h2 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-balance">
-            Tu competencia ya está online. Tú puedes verte mejor.
+            Tu competencia ya está online. Tú puedes ser mucho mejor.
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-brand-cream/80">
-            Escríbenos hoy y en menos de 24 horas te enviamos un plan claro para tu proyecto. Sin compromiso.
+            Escríbeme hoy y en menos de 24 horas te envío un plan claro para tu proyecto. Sin compromiso.
           </p>
           <a
             href="mailto:hello@websiteforever.com"
@@ -322,7 +321,7 @@ function Index() {
           </a>
           <p className="mt-4 flex items-center justify-center gap-2 text-xs text-brand-cream/70">
             <Clock className="size-3.5" />
-            Quedan 2 cupos este mes
+            Consigue ventas ahora mismo
           </p>
         </Reveal>
       </section>
@@ -334,7 +333,7 @@ function Index() {
             WEBSITE<span className="text-brand-gold">.</span>FOREVER
           </span>
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Website Forever. Hecho a mano.
+            © {new Date().getFullYear()} Website Forever.
           </p>
         </div>
       </footer>
