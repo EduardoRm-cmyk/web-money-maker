@@ -37,7 +37,7 @@ function Index() {
       <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
           <span className="font-display text-lg font-extrabold tracking-tighter">
-            WEBSITE<span className="text-brand-gold">.</span>FOREVER
+            Golden<span className="text-brand-gold">.</span>WEBSITE
           </span>
           <a
             href="#contacto"
@@ -187,18 +187,17 @@ function Index() {
 
           <Reveal className="overflow-hidden rounded-3xl border border-brand-gold/40 bg-card shadow-2xl shadow-brand-deep/10">
             <div className="bg-brand-deep px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-cream">
-              PAQUETE IDEAL
+              GOLDEN WEBSITE
             </div>
             <div className="p-8 sm:p-10">
               <ul className="space-y-4">
                 {[
-                  ["Web personalizada de 5 secciones", "\n"],
-                  ["Textos de venta escritos por nosotros", "\n"],
-                  ["Optimización móvil y velocidad", "\n"],
-                  ["SEO local + Google", "\n"],
-                  ["Dominio y hosting el primer año", "\n"],
-                  ["Formulario de contacto y WhatsApp", "\n"],
-                  ["30 días de soporte post-lanzamiento", "\n"],
+                  ["Web personalizada de 5 secciones", ""],
+                  ["Textos de venta irresistibles estilo Copywrite", ""],
+                  ["Velocidad y eficiencia en la web de tu negocio", ""],
+                  ["Subdominio y hosting totalmente gratis de Netlify", ""],
+                  ["Formulario de contacto, email Marketing y WhatsApp ", ""],
+                  ["30 días de soporte y modificaciones post-lanzamiento", ""],
                 ].map(([item, value]) => (
                   <li key={item} className="flex items-center justify-between gap-4 border-b border-border pb-3 text-sm sm:text-base">
                     <span className="flex items-center gap-3">
@@ -222,7 +221,7 @@ function Index() {
                   href="#contacto"
                   className="mt-8 block w-full rounded-full bg-brand-gold py-4 text-center text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
                 >
-                  Comprar
+                  Ordenar
                 </a>
                 <p className="mt-3 text-xs text-muted-foreground">50% hasta el 31 de Agosto.</p>
               </div>
@@ -235,8 +234,7 @@ function Index() {
             <div>
               <h3 className="text-lg font-bold">Garantía "o te gusta, o no pagas"</h3>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                Si después de ver la propuesta de diseño no te convence, cancelas y te devuelvo el 100%. Sin
-                preguntas incómodas.
+                Si antes de lanzarlo no te convence la propuesta de diseño, cancelas y te devuelvo el 100%. Sin preguntas incómodas.
               </p>
             </div>
           </Reveal>
@@ -288,7 +286,7 @@ function Index() {
             />
             <Faq
               q="¿Necesito saber de tecnología?"
-              a="No. Nos encargamos del dominio, el hosting y la publicación. Tú solo apruebas el diseño."
+              a="No. Me encargo del dominio, el hosting y la publicación. Tú solo apruebas el diseño para tu negocio."
             />
             <Faq
               q="¿Puedo hacer cambios después?"
@@ -330,10 +328,10 @@ function Index() {
       <footer className="border-t border-border px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
           <span className="font-display text-lg font-extrabold tracking-tighter">
-            WEBSITE<span className="text-brand-gold">.</span>FOREVER
+            Golden<span className="text-brand-gold">.</span>WEBSITE
           </span>
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} Website Forever.
+            © {new Date().getFullYear()}&nbsp;Golden Website.
           </p>
         </div>
       </footer>
