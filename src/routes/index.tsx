@@ -47,14 +47,14 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Announcement bar */}
       <div className="bg-brand-deep px-4 py-2.5 text-center text-xs font-medium tracking-wide text-brand-cream">
-        &nbsp;50% OFF&nbsp;· hasta el 31 de Agosto
+        &nbsp;<span className="font-bold text-brand-gold-light">50% OFF</span>&nbsp;· hasta el 31 de Agosto
       </div>
 
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-          <span className="font-display text-lg font-extrabold tracking-tighter text-brand-gold">
-            Golden<span className="text-brand-gold">.</span><span className="text-brand-deep">WEBSITE</span>
+          <span className="font-display text-lg font-extrabold tracking-tighter">
+            <span className="text-gold-shine">Golden</span><span className="text-brand-gold">.</span><span className="text-brand-deep">WEBSITE</span>
           </span>
           
         </div>
@@ -73,10 +73,10 @@ function Index() {
               <span className="relative z-10">venda por ti</span>
               <span className="absolute inset-x-0 bottom-1 -z-0 h-3 rounded bg-brand-gold/35" />
             </span>{" "}
-            mientras duermes
+            <span className="inline-block border-b-[4px] border-red-600 pb-0.5">mientras duermes</span>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg whitespace-pre-line">
-            Diseño personalizado, subdominio <span className="text-foreground">gratis</span> de por vida y Marketing Digital que triplica tus ventas.{"\n\n\n"}
+            Diseño personalizado, subdominio <span className="text-foreground">gratis</span> de por vida y Marketing Digital que <span className="inline-block border-b-[3px] border-red-600 pb-0.5">triplica tus ventas</span>.{"\n\n\n"}
             Tu propio Website en menos de <span className="text-foreground">7 días</span>: rápido, impecable en cualquier dispositivo y pensado para una sola cosa — vender y que te contacten.
           </p>
           <div className="mt-9 flex flex-col items-center gap-3">
@@ -206,11 +206,12 @@ function Index() {
             <div className="p-8 sm:p-10">
               <ul className="space-y-4">
                 {[
-                  ["Web personalizada de 5 secciones", ""],
+                  ["Diseño y estructura Web personalizados", ""],
                   ["Textos de venta irresistibles estilo Copywrite", ""],
+                  ["Catálogo de productos con personalidad", ""],
                   ["Velocidad y eficiencia en la web de tu negocio", ""],
                   ["Subdominio y hosting totalmente gratis de Netlify", ""],
-                  ["Formulario de contacto, email Marketing y WhatsApp ", ""],
+                  ["Formulario de contacto, email Marketing con Workflows y WhatsApp ", ""],
                   ["30 días de soporte y modificaciones post-lanzamiento", ""],
                 ].map(([item, value]) => (
                   <li key={item} className="flex items-center justify-between gap-4 border-b border-border pb-3 text-sm sm:text-base">
@@ -315,8 +316,8 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
-          <span className="font-display text-lg font-extrabold tracking-tighter text-brand-gold">
-            Golden<span className="text-brand-gold">.</span><span className="text-brand-deep">WEBSITE</span>
+          <span className="font-display text-lg font-extrabold tracking-tighter">
+            <span className="text-gold-shine">Golden</span><span className="text-brand-gold">.</span><span className="text-brand-deep">WEBSITE</span>
           </span>
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()}&nbsp;Golden Website.
@@ -328,7 +329,7 @@ function Index() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Escríbeme por WhatsApp"
-        className="fixed bottom-5 right-5 z-50 inline-flex size-14 items-center justify-center rounded-full bg-brand-deep text-brand-cream shadow-xl shadow-brand-deep/30 transition-transform hover:scale-110"
+        className="fixed bottom-5 right-5 z-50 inline-flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl shadow-black/20 transition-transform hover:scale-110"
       >
         <WhatsAppIcon className="size-7" />
       </a>
