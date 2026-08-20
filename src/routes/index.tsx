@@ -1,10 +1,25 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Check, X, Mail, Shield, Clock, Sparkles, MessageCircle } from "lucide-react";
+import { ArrowRight, Check, Mail, Shield, Clock, Sparkles } from "lucide-react";
 
-const WHATSAPP = "https://wa.me/5491138844100";
+const WHATSAPP =
+  "https://wa.me/5491138844100?text=Hola%20Golden.WEBSITE%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tu%20servicio";
 import heroBg from "../assets/honey-hero.jpg";
 import stackImg from "../assets/honey-stack.jpg";
 import { Reveal } from "@/components/Reveal";
+
+function WhatsAppIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm6.14 13.83c-.25.71-1.46 1.34-2.03 1.42-.54.08-1.08.18-3.37-.7-2.84-1.1-4.67-3.88-4.81-4.07-.14-.18-1.15-1.54-1.15-2.93 0-1.39.72-2.06.98-2.35.25-.28.54-.35.72-.35.18 0 .36 0 .52.01.17.01.39-.06.61.47.22.53.72 1.87.79 2.01.07.14.01.29-.04.43-.05.14-.09.25-.18.38-.09.14-.19.29-.27.39-.09.1-.18.21-.08.41.1.2.46.76.99 1.23.68.61 1.25.8 1.51.89.18.06.31-.04.4-.13.1-.1.42-.49.53-.66.11-.17.22-.14.37-.09.15.06.96.45 1.13.54.17.08.28.13.32.2.05.08.03.47-.22 1.18z" />
+    </svg>
+  );
+}
 
 export const Route = createFileRoute("/")({
   component: Index,
