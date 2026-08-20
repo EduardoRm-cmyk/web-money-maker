@@ -16,7 +16,7 @@ function WhatsAppIcon({ className }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
-      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-11.419h-.004c-3.849 0-6.986 3.136-6.992 6.984-.003 1.486.46 2.904 1.332 4.08l-1.401 4.077 4.169-1.392a7.004 7.004 0 0 0 3.891 1.17h.004c3.846 0 6.985-3.14 6.992-6.988.003-3.849-3.134-6.984-6.984-6.984m5.884 6.988c-.003 3.252-2.647 5.895-5.88 5.895h-.004a5.87 5.87 0 0 1-3.235-.969l-2.335.779.773-2.248a5.854 5.854 0 0 1-1.138-3.475c.003-3.252 2.647-5.895 5.892-5.895 3.247.003 5.89 2.646 5.893 5.893" />
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm6.14 13.83c-.25.71-1.46 1.34-2.03 1.42-.54.08-1.08.18-3.37-.7-2.84-1.1-4.67-3.88-4.81-4.07-.14-.18-1.15-1.54-1.15-2.93 0-1.39.72-2.06.98-2.35.25-.28.54-.35.72-.35.18 0 .36 0 .52.01.17.01.39-.06.61.47.22.53.72 1.87.79 2.01.07.14.01.29-.04.43-.05.14-.09.25-.18.38-.09.14-.19.29-.27.39-.09.1-.18.21-.08.41.1.2.46.76.99 1.23.68.61 1.25.8 1.51.89.18.06.31-.04.4-.13.1-.1.42-.49.53-.66.11-.17.22-.14.37-.09.15.06.96.45 1.13.54.17.08.28.13.32.2.05.08.03.47-.22 1.18z" />
     </svg>
   );
 }
@@ -47,7 +47,7 @@ function Index() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       {/* Announcement bar */}
       <div className="bg-brand-deep px-4 py-2.5 text-center text-xs font-medium tracking-wide text-brand-cream">
-        &nbsp;<span className="font-bold text-brand-gold">50% OFF</span>&nbsp;· hasta el 31 de Agosto
+        &nbsp;50% OFF&nbsp;· hasta el 31 de Agosto
       </div>
 
       {/* Header */}
@@ -76,7 +76,7 @@ function Index() {
             mientras duermes
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg whitespace-pre-line">
-            Diseño personalizado, subdominio <span className="text-foreground">gratis</span> de por vida y Marketing Digital que <span className="underline decoration-4 underline-offset-4 decoration-brand-gold text-foreground">triplica tus ventas</span>.{"\n\n\n"}
+            Diseño personalizado, subdominio <span className="text-foreground">gratis</span> de por vida y Marketing Digital que triplica tus ventas.{"\n\n\n"}
             Tu propio Website en menos de <span className="text-foreground">7 días</span>: rápido, impecable en cualquier dispositivo y pensado para una sola cosa — vender y que te contacten.
           </p>
           <div className="mt-9 flex flex-col items-center gap-3">
