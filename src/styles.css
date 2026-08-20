@@ -115,8 +115,8 @@
   --brand-deep: oklch(0.3 0.06 62);
 
   --font-sans: "Raleway", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Playfair Display", ui-serif, Georgia, serif;
-  --font-sub: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-sub: "Playfair Display", ui-serif, Georgia, serif;
 }
 
 
