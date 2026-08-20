@@ -1,5 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Check, X, Mail, Shield, Clock, Sparkles, Star } from "lucide-react";
+import { ArrowRight, Check, X, Mail, Shield, Clock, Sparkles, MessageCircle } from "lucide-react";
+
+const WHATSAPP = "https://wa.me/5491138844100";
 import heroBg from "../assets/honey-hero.jpg";
 import stackImg from "../assets/honey-stack.jpg";
 import { Reveal } from "@/components/Reveal";
@@ -36,15 +38,10 @@ function Index() {
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-          <span className="font-display text-lg font-extrabold tracking-tighter">
-            Golden<span className="text-brand-gold">.</span>WEBSITE
+          <span className="font-display text-lg font-extrabold tracking-tighter text-brand-gold">
+            Golden<span className="text-brand-gold">.</span><span className="text-brand-deep">WEBSITE</span>
           </span>
-          <a
-            href="#contacto"
-            className="hidden sm:inline-flex items-center justify-center rounded-full bg-brand-gold px-5 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
-          >
-            Solicitar web
-          </a>
+          
         </div>
       </header>
 
@@ -69,7 +66,9 @@ function Index() {
           </p>
           <div className="mt-9 flex flex-col items-center gap-3">
             <a
-              href="#contacto"
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex w-full max-w-sm items-center justify-center gap-2 rounded-full bg-brand-gold px-8 py-4 text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.03]"
             >
               Solicitar web
@@ -218,7 +217,9 @@ function Index() {
                   <span className="text-muted-foreground">/proyecto</span>
                 </div>
                 <a
-                  href="#contacto"
+                  href={WHATSAPP}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-8 block w-full rounded-full bg-brand-gold py-4 text-center text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
                 >
                   Ordenar
@@ -238,34 +239,6 @@ function Index() {
               </p>
             </div>
           </Reveal>
-        </div>
-      </section>
-
-      {/* TESTIMONIOS */}
-      <section className="bg-brand-cream px-6 py-24">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="mb-12 text-center text-3xl font-bold tracking-tight sm:text-4xl text-balance">
-            Lo que dicen quienes ya la tienen
-          </h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            <Testimonial
-              quote="Pasé de mandar mi Instagram a mandar mi web. En el primer mes me llegaron 9 clientes nuevos."
-              name="Carla M."
-              role="Estudio de uñas"
-            />
-            <Testimonial
-              quote="En una semana estaba online. Se ve mejor que la de negocios mucho más grandes que el mío."
-              name="Diego R."
-              role="Taller mecánico"
-              delay={120}
-            />
-            <Testimonial
-              quote="Lo que más valoro es que escribieron los textos. Yo nunca hubiera sabido qué poner."
-              name="Ana P."
-              role="Consultora"
-              delay={240}
-            />
-          </div>
         </div>
       </section>
 
@@ -327,14 +300,23 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
-          <span className="font-display text-lg font-extrabold tracking-tighter">
-            Golden<span className="text-brand-gold">.</span>WEBSITE
+          <span className="font-display text-lg font-extrabold tracking-tighter text-brand-gold">
+            Golden<span className="text-brand-gold">.</span><span className="text-brand-deep">WEBSITE</span>
           </span>
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()}&nbsp;Golden Website.
           </p>
         </div>
       </footer>
+      <a
+        href={WHATSAPP}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Escríbeme por WhatsApp"
+        className="fixed bottom-5 right-5 z-50 inline-flex size-14 items-center justify-center rounded-full bg-brand-deep text-brand-cream shadow-xl shadow-brand-deep/30 transition-transform hover:scale-110"
+      >
+        <MessageCircle className="size-7" />
+      </a>
     </div>
   );
 }
@@ -346,23 +328,6 @@ function StepCard({ number, title, description }: { number: string; title: strin
       <h3 className="mb-3 text-xl font-bold">{title}</h3>
       <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
     </div>
-  );
-}
-
-function Testimonial({ quote, name, role, delay = 0 }: { quote: string; name: string; role: string; delay?: number }) {
-  return (
-    <Reveal as="figure" delay={delay} className="flex h-full flex-col rounded-2xl border border-border bg-card p-7">
-      <div className="mb-4 flex gap-0.5">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <Star key={i} className="size-4 fill-brand-gold text-brand-gold" />
-        ))}
-      </div>
-      <blockquote className="flex-1 text-sm leading-relaxed">"{quote}"</blockquote>
-      <figcaption className="mt-5 text-sm">
-        <span className="font-semibold">{name}</span>
-        <span className="block text-xs text-muted-foreground">{role}</span>
-      </figcaption>
-    </Reveal>
   );
 }
 
