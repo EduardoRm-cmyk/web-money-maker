@@ -172,8 +172,38 @@
 }
 
 
-@utility bg-gold-gradient {
-  background: linear-gradient(135deg, var(--color-brand-gold) 0%, var(--color-brand-gold-light) 100%);
+@utility bg-gold-shine {
+  background: linear-gradient(
+    100deg,
+    var(--color-brand-gold) 20%,
+    var(--color-brand-gold-light) 40%,
+    #fff8e1 50%,
+    var(--color-brand-gold-light) 60%,
+    var(--color-brand-gold) 80%
+  );
+  background-size: 200% auto;
+  animation: gold-shine 4s linear infinite;
+}
+
+.golden-border {
+  position: relative;
+  padding: 2px;
+  background: linear-gradient(
+    100deg,
+    var(--color-brand-gold) 20%,
+    var(--color-brand-gold-light) 40%,
+    #fff8e1 50%,
+    var(--color-brand-gold-light) 60%,
+    var(--color-brand-gold) 80%
+  );
+  background-size: 200% auto;
+  animation: gold-shine 4s linear infinite;
+}
+
+@keyframes gold-shine {
+  to {
+    background-position: -200% center;
+  }
 }
 
 @utility text-gold-shine {
@@ -192,12 +222,6 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 1px 12px color-mix(in oklab, var(--color-brand-gold) 45%, transparent);
   animation: gold-shine 4s linear infinite;
-}
-
-@keyframes gold-shine {
-  to {
-    background-position: -200% center;
-  }
 }
 
 @utility hero-mask {
