@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Check, Mail, Shield, Clock, Sparkles } from "lucide-react";
+import { ArrowRight, Check, Mail, Shield, Clock } from "lucide-react";
 
 const WHATSAPP =
   "https://wa.me/5491138844100?text=Hola%20Golden.WEBSITE%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20tu%20servicio";
@@ -51,10 +51,10 @@ function Index() {
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-md">
+      <header className="sticky top-0 z-50 border-b border-brand-gold/25 bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-          <span className="font-display text-lg font-extrabold tracking-tighter">
-            <span className="text-gold-shine">Golden</span><span className="text-brand-gold">.</span><span className="text-brand-deep">WEBSITE</span>
+          <span className="font-display text-lg tracking-tight">
+            <span className="text-gold-shine font-extrabold">Golden</span><span className="text-brand-gold font-extrabold">.</span><span className="ml-0.5 align-middle text-sm font-medium tracking-[0.2em] text-brand-black/80">WEBSITE</span>
           </span>
           
         </div>
@@ -64,7 +64,7 @@ function Index() {
       <section className="relative px-6 pb-20 pt-16">
         <div className="absolute inset-x-0 top-0 -z-10 h-[60%] bg-gradient-to-b from-brand-cream to-transparent" />
         <div className="mx-auto max-w-3xl text-center">
-          <span className="font-sub inline-block rounded-full border border-brand-gold/40 bg-brand-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-brand-deep">
+          <span className="font-sub inline-block rounded-full border border-brand-gold/40 bg-brand-gold/10 px-4 py-1.5 text-sm font-semibold uppercase tracking-widest text-brand-deep">
             PARA NEGOCIOS QUE YA EMPEZARON, PERO NO VENDEN
           </span>
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-balance sm:text-5xl md:text-6xl">
@@ -77,14 +77,14 @@ function Index() {
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg whitespace-pre-line">
             Diseño personalizado, subdominio <span className="text-foreground">gratis</span> de por vida y Marketing Digital que <span className="inline-block border-b-[3px] border-red-600 pb-0.5">triplica tus ventas</span>.{"\n\n\n"}
-            Tu propio Website en menos de <span className="text-foreground">7 días</span>: rápido, impecable en cualquier dispositivo y pensado para una sola cosa — vender y que te contacten.
+            Tu propia web en menos de <span className="text-foreground">7 días</span>: rápido, impecable en cualquier dispositivo y pensado para una sola cosa — vender y que te contacten.
           </p>
           <div className="mt-9 flex flex-col items-center gap-3">
             <a
               href={WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex w-full max-w-sm items-center justify-center gap-2 rounded-full bg-brand-gold px-8 py-4 text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.03]"
+              className="group bg-gold-shine inline-flex w-full max-w-sm items-center justify-center gap-2 rounded-full px-8 py-4 text-base font-bold text-brand-deep shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.03]"
             >
               Solicitar web
               <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
@@ -137,7 +137,7 @@ function Index() {
       <section id="solucion" className="px-6 py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <Reveal>
-            <span className="font-sub text-xs font-semibold uppercase tracking-widest text-brand-gold">La solución</span>
+            <span className="font-sub text-sm font-semibold uppercase tracking-widest text-brand-gold">La solución</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
               Una web profesional, diseñada para vender y crecer tu comunidad de clientes
             </h2>
@@ -176,7 +176,7 @@ function Index() {
       <section className="bg-brand-cream px-6 py-24">
         <div className="mx-auto max-w-5xl">
           <div className="mb-14 text-center">
-            <span className="font-sub text-xs font-semibold uppercase tracking-widest text-brand-gold">Cómo funciona</span>
+            <span className="font-sub text-sm font-semibold uppercase tracking-widest text-brand-gold">Cómo funciona</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
               De la idea a tu web en 3 pasos
             </h2>
@@ -191,59 +191,108 @@ function Index() {
 
       {/* OFERTA */}
       <section id="precios" className="px-6 py-24">
-        <div className="mx-auto max-w-3xl">
+        <div className="mx-auto max-w-5xl">
           <div className="mb-12 text-center">
-            <span className="font-sub text-xs font-semibold uppercase tracking-widest text-brand-gold">Todo lo que recibes</span>
+            <span className="font-sub text-sm font-semibold uppercase tracking-widest text-brand-gold">Todo lo que recibes</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
-              3&nbsp; &nbsp;Planes para ti
+              2&nbsp; &nbsp;Planes para ti
             </h2>
           </div>
 
-          <Reveal className="overflow-hidden rounded-3xl border border-brand-gold/40 bg-card shadow-2xl shadow-brand-deep/10">
-            <div className="bg-brand-deep px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-cream">
-              GOLDEN WEBSITE
-            </div>
-            <div className="p-8 sm:p-10">
-              <ul className="space-y-4">
-                {[
-                  ["Diseño y estructura Web personalizados", ""],
-                  ["Textos de venta irresistibles estilo Copywrite", ""],
-                  ["Catálogo de productos con personalidad", ""],
-                  ["Velocidad y eficiencia en la web de tu negocio", ""],
-                  ["Subdominio y hosting totalmente gratis de Netlify", ""],
-                  ["Formulario de contacto, email Marketing con Workflows y WhatsApp ", ""],
-                  ["30 días de soporte y modificaciones post-lanzamiento", ""],
-                ].map(([item, value]) => (
-                  <li key={item} className="flex items-center justify-between gap-4 border-b border-border pb-3 text-sm sm:text-base">
-                    <span className="flex items-center gap-3">
-                      <Check className="size-5 shrink-0 text-brand-gold" />
-                      {item}
-                    </span>
-                    <span className="shrink-0 text-muted-foreground line-through">{value}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-8 text-center">
-                <p className="text-sm text-muted-foreground">
-                  Antes: <span className="line-through">$159,99</span>
-                </p>
-                <div className="mt-2 flex items-baseline justify-center gap-2">
-                  <span className="text-5xl font-extrabold tracking-tight text-brand-gold sm:text-6xl">$79,99</span>
-                  <span className="text-muted-foreground">/proyecto</span>
-                </div>
-                <a
-                  href={WHATSAPP}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-8 block w-full rounded-full bg-brand-gold py-4 text-center text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
-                >
-                  Ordenar
-                </a>
-                <p className="mt-3 text-xs text-muted-foreground">50% hasta el 31 de Agosto.</p>
+          <div className="grid gap-8 md:grid-cols-2 md:items-start">
+            <Reveal className="golden-border overflow-hidden rounded-3xl shadow-2xl shadow-brand-deep/10">
+              <div className="rounded-[calc(1.5rem-2px)] overflow-hidden bg-card">
+              <div className="bg-gold-shine px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-deep">
+                GOLDEN WEBSITE
               </div>
-            </div>
-          </Reveal>
+              <div className="p-8 sm:p-10">
+                <ul className="space-y-4">
+                  {[
+                    ["Web personalizada de 5 secciones", ""],
+                    ["Textos de venta irresistibles estilo Copywrite", ""],
+                    ["Catálogo de productos que enamora a primera vista", ""],
+                    ["Velocidad y eficiencia en la web de tu negocio", ""],
+                    ["Subdominio y hosting totalmente gratis de Netlify", ""],
+                    ["Formulario de contacto, email Marketing con Workflows y WhatsApp ", ""],
+                    ["30 días de soporte y modificaciones post-lanzamiento", ""],
+                  ].map(([item, value]) => (
+                    <li key={item} className="flex items-center justify-between gap-4 border-b border-border pb-3 text-sm sm:text-base">
+                      <span className="flex items-center gap-3">
+                        <Check className="size-5 shrink-0 text-brand-gold" />
+                        {item}
+                      </span>
+                      <span className="shrink-0 text-muted-foreground line-through">{value}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-8 text-center">
+                  <p className="text-sm text-muted-foreground">
+                    Antes: <span className="line-through">$159,99</span>
+                  </p>
+                  <div className="mt-2 flex items-baseline justify-center gap-2">
+                    <span className="text-gold-shine text-5xl font-extrabold tracking-tight sm:text-6xl">$79,99</span>
+                    <span className="text-muted-foreground">/proyecto</span>
+                  </div>
+                  <a
+                    href={WHATSAPP}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gold-shine mt-8 block w-full rounded-full py-4 text-center text-base font-bold text-brand-deep shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
+                  >
+                    Ordenar
+                  </a>
+                  <p className="mt-3 text-xs text-muted-foreground">50% hasta el 31 de Agosto.</p>
+                </div>
+              </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={100} className="overflow-hidden rounded-3xl border border-border bg-card shadow-xl shadow-brand-deep/10">
+              <div className="bg-brand-deep px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-cream">
+                GOLDEN PLUS
+              </div>
+              <div className="p-8 sm:p-10">
+                <ul className="space-y-4">
+                  {[
+                    ["Todo lo del plan Golden Website", ""],
+                    ["Hasta 8 secciones personalizadas", ""],
+                    ["Optimización SEO avanzada para buscadores", ""],
+                    ["Panel de analíticas de visitas y contactos", ""],
+                    ["Integración con pasarela de pagos", ""],
+                    ["60 días de soporte y modificaciones post-lanzamiento", ""],
+                  ].map(([item, value]) => (
+                    <li key={item} className="flex items-center justify-between gap-4 border-b border-border pb-3 text-sm sm:text-base">
+                      <span className="flex items-center gap-3">
+                        <Check className="size-5 shrink-0 text-brand-gold" />
+                        {item}
+                      </span>
+                      <span className="shrink-0 text-muted-foreground line-through">{value}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-8 text-center">
+                  <p className="text-sm text-muted-foreground">
+                    Antes: <span className="line-through">$259,99</span>
+                  </p>
+                  <div className="mt-2 flex items-baseline justify-center gap-2">
+                    <span className="text-5xl font-extrabold tracking-tight text-brand-gold sm:text-6xl">$129,99</span>
+                    <span className="text-muted-foreground">/proyecto</span>
+                  </div>
+                  <a
+                    href={WHATSAPP}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-8 block w-full rounded-full bg-brand-gold py-4 text-center text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
+                  >
+                    Ordenar
+                  </a>
+                  <p className="mt-3 text-xs text-muted-foreground">50% hasta el 31 de Agosto.</p>
+                </div>
+              </div>
+            </Reveal>
+          </div>
 
           {/* Garantía */}
           <Reveal delay={120} className="mt-8 flex flex-col items-center gap-4 rounded-3xl border border-border bg-brand-cream p-8 text-center sm:flex-row sm:text-left">
@@ -267,11 +316,11 @@ function Index() {
           <div className="space-y-3">
             <Faq
               q="¿Cuánto tarda realmente?"
-              a="7 días hábiles desde que recibimos tus fotos y la información de tu negocio. Si algo se retrasa, te avisamos antes."
+              a="7 días hábiles desde que recibo tus fotos y la información de tu negocio. Si algo se retrasa, con anticipación."
             />
             <Faq
               q="¿Y si ya tengo una web?"
-              a="Mejor. La rediseñamos y migramos tu contenido sin perder tu posicionamiento actual."
+              a="Mejor. La rediseño y migro tu contenido sin perder tu posicionamiento actual."
             />
             <Faq
               q="¿Necesito saber de tecnología?"
@@ -281,10 +330,6 @@ function Index() {
               q="¿Puedo hacer cambios después?"
               a="Sí. Tienes 30 días de soporte incluido y después puedes pedir cambios cuando los necesites."
             />
-            <Faq
-              q="¿Qué pasa después del primer año?"
-              a="Dominio y hosting cuestan alrededor de $120 al año. Puedes renovarlo con nosotros o por tu cuenta."
-            />
           </div>
         </div>
       </section>
@@ -292,7 +337,7 @@ function Index() {
       {/* CTA FINAL */}
       <section id="contacto" className="bg-brand-deep px-6 py-24 text-brand-cream">
         <Reveal className="mx-auto max-w-3xl text-center">
-          <Sparkles className="mx-auto size-8 text-brand-gold-light" />
+          <span className="text-gold-shine text-glow font-display mx-auto block text-5xl font-bold italic leading-none">W</span>
           <h2 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-balance">
             Tu competencia ya está online. Tú puedes ser mucho mejor.
           </h2>
@@ -301,7 +346,7 @@ function Index() {
           </p>
           <a
             href="mailto:hello@websiteforever.com"
-            className="mt-10 inline-flex items-center gap-3 rounded-full bg-brand-gold px-8 py-4 text-base font-bold text-primary-foreground transition-transform hover:scale-105 sm:text-lg"
+            className="bg-gold-shine mt-10 inline-flex items-center gap-3 rounded-full px-8 py-4 text-base font-bold text-brand-deep transition-transform hover:scale-105 sm:text-lg"
           >
             <Mail className="size-5" />
             hello@websiteforever.com
@@ -316,8 +361,8 @@ function Index() {
       {/* Footer */}
       <footer className="border-t border-border px-6 py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
-          <span className="font-display text-lg font-extrabold tracking-tighter">
-            <span className="text-gold-shine">Golden</span><span className="text-brand-gold">.</span><span className="text-brand-deep">WEBSITE</span>
+          <span className="font-display text-lg tracking-tight">
+            <span className="text-gold-shine font-extrabold">Golden</span><span className="text-brand-gold font-extrabold">.</span><span className="ml-0.5 align-middle text-sm font-medium tracking-[0.2em] text-brand-black/80">WEBSITE</span>
           </span>
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()}&nbsp;Golden Website.
