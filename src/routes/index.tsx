@@ -64,7 +64,7 @@ function Index() {
       <section className="relative px-6 pb-20 pt-16">
         <div className="absolute inset-x-0 top-0 -z-10 h-[60%] bg-gradient-to-b from-brand-cream to-transparent" />
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-block rounded-full border border-brand-gold/40 bg-brand-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-brand-deep">
+          <span className="font-sub inline-block rounded-full border border-brand-gold/40 bg-brand-gold/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-brand-deep">
             PARA NEGOCIOS QUE YA EMPEZARON, PERO NO VENDEN
           </span>
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] tracking-tight text-balance sm:text-5xl md:text-6xl">
@@ -137,7 +137,7 @@ function Index() {
       <section id="solucion" className="px-6 py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
           <Reveal>
-            <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">La solución</span>
+            <span className="font-sub text-xs font-semibold uppercase tracking-widest text-brand-gold">La solución</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
               Una web profesional, diseñada para vender y crecer tu comunidad de clientes
             </h2>
@@ -176,7 +176,7 @@ function Index() {
       <section className="bg-brand-cream px-6 py-24">
         <div className="mx-auto max-w-5xl">
           <div className="mb-14 text-center">
-            <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Cómo funciona</span>
+            <span className="font-sub text-xs font-semibold uppercase tracking-widest text-brand-gold">Cómo funciona</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
               De la idea a tu web en 3 pasos
             </h2>
@@ -193,7 +193,7 @@ function Index() {
       <section id="precios" className="px-6 py-24">
         <div className="mx-auto max-w-3xl">
           <div className="mb-12 text-center">
-            <span className="text-xs font-semibold uppercase tracking-widest text-brand-gold">Todo lo que recibes</span>
+            <span className="font-sub text-xs font-semibold uppercase tracking-widest text-brand-gold">Todo lo que recibes</span>
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl text-balance">
               3&nbsp; &nbsp;Planes para ti
             </h2>
@@ -330,7 +330,7 @@ function Index() {
         aria-label="Escríbeme por WhatsApp"
         className="fixed bottom-5 right-5 z-50 inline-flex size-14 items-center justify-center rounded-full bg-brand-deep text-brand-cream shadow-xl shadow-brand-deep/30 transition-transform hover:scale-110"
       >
-        <MessageCircle className="size-7" />
+        <WhatsAppIcon className="size-7" />
       </a>
     </div>
   );
