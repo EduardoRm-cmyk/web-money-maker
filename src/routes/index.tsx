@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Website Forever | Tu web lista en 7 días" },
+      { title: "Golden Website | Tu web vale oro" },
       {
         name: "description",
         content:
@@ -235,9 +235,7 @@ function Index() {
                     <span className="text-muted-foreground">/proyecto</span>
                   </div>
                   <a
-                    href={WHATSAPP}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/checkout?plan=golden-website"
                     className="bg-gold-shine mt-8 block w-full rounded-full py-4 text-center text-base font-bold text-brand-deep shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
                   >
                     Ordenar
@@ -281,9 +279,7 @@ function Index() {
                     <span className="text-muted-foreground">/proyecto</span>
                   </div>
                   <a
-                    href={WHATSAPP}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/checkout?plan=golden-plus"
                     className="mt-8 block w-full rounded-full bg-brand-gold py-4 text-center text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
                   >
                     Ordenar
@@ -316,7 +312,7 @@ function Index() {
           <div className="space-y-3">
             <Faq
               q="¿Cuánto tarda realmente?"
-              a="7 días hábiles desde que recibo tus fotos y la información de tu negocio. Si algo se retrasa, con anticipación."
+              a="7 días hábiles desde que recibo tus fotos y la información de tu negocio. Si algo se retrasa, te comunico con anticipación."
             />
             <Faq
               q="¿Y si ya tengo una web?"
@@ -328,7 +324,7 @@ function Index() {
             />
             <Faq
               q="¿Puedo hacer cambios después?"
-              a="Sí. Tienes 30 días de soporte incluido y después puedes pedir cambios cuando los necesites."
+              a="Sí. Tienes 30 días de soporte incluido y puedes pedir cambios cuando los necesites dentro de ese plazo."
             />
           </div>
         </div>
