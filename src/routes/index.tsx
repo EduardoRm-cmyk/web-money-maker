@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
         content:
           "Diseñamos webs personalizadas que convierten visitantes en clientes. Sin plantillas, sin complicaciones y listas en 7 días.",
       },
-      { property: "og:title", content: "Website Forever | Tu web lista en 7 días" },
+      { property: "og:title", content: "Golden Website | Tu web vale oro" },
       {
         property: "og:description",
         content: "Webs personalizadas que convierten visitantes en clientes. Listas en 7 días.",
@@ -208,11 +208,11 @@ function Index() {
               <div className="p-8 sm:p-10">
                 <ul className="space-y-4">
                   {[
-                    ["Web personalizada de 5 secciones", ""],
+                    ["Web totalmente personalizada", ""],
                     ["Textos de venta irresistibles estilo Copywrite", ""],
-                    ["Catálogo de productos que enamora a primera vista", ""],
-                    ["Velocidad y eficiencia en la web de tu negocio", ""],
-                    ["Subdominio y hosting totalmente gratis de Netlify", ""],
+                    ["Catálogo llamativo de productos + pago directo API", ""],
+                    ["Dominio y hosting incluído por un año", ""],
+                    ["Formulario de contacto y WhatsApp", ""],
                     ["Formulario de contacto, email Marketing con Workflows y WhatsApp ", ""],
                     ["30 días de soporte y modificaciones post-lanzamiento", ""],
                   ].map(([item, value]) => (
@@ -246,18 +246,21 @@ function Index() {
               </div>
             </Reveal>
 
-            <Reveal delay={100} className="overflow-hidden rounded-3xl border border-border bg-card shadow-xl shadow-brand-deep/10">
-              <div className="bg-brand-deep px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-cream">
-                GOLDEN PLUS
+             <div className="grid gap-8 md:grid-cols-2 md:items-start">
+            <Reveal className="golden-border overflow-hidden rounded-3xl shadow-2xl shadow-brand-deep/10">
+              <div className="rounded-[calc(1.5rem-2px)] overflow-hidden bg-card">
+              <div className="bg-gold-shine px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-deep">
+                EXCLUSIVE WEBSITE
               </div>
               <div className="p-8 sm:p-10">
                 <ul className="space-y-4">
                   {[
-                    ["Todo lo del plan Golden Website", ""],
-                    ["Hasta 8 secciones personalizadas", ""],
-                    ["Optimización SEO avanzada para buscadores", ""],
+                    ["Plan Golden Website +", ""],
+                    ["Diseño con animaciones inmersivas", ""],
+                    ["Automatización de Email Marketing (bienvenida, carritos y ofertas)", ""],
+                    ["Automatización de procesos internos Workflow (actualización de inventario, alertas de pedidos y facturación inmediata)", ""],
+                    ["Optimización SEO avanzada para destacar en buscadores Google", ""],
                     ["Panel de analíticas de visitas y contactos", ""],
-                    ["Integración con pasarela de pagos", ""],
                     ["60 días de soporte y modificaciones post-lanzamiento", ""],
                   ].map(([item, value]) => (
                     <li key={item} className="flex items-center justify-between gap-4 border-b border-border pb-3 text-sm sm:text-base">
@@ -279,7 +282,7 @@ function Index() {
                     <span className="text-muted-foreground">/proyecto</span>
                   </div>
                   <a
-                    href="/checkout?plan=golden-plus"
+                    href="/checkout?plan=exclusive-website"
                     className="mt-8 block w-full rounded-full bg-brand-gold py-4 text-center text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
                   >
                     Ordenar
@@ -333,7 +336,6 @@ function Index() {
       {/* CTA FINAL */}
       <section id="contacto" className="bg-brand-deep px-6 py-24 text-brand-cream">
         <Reveal className="mx-auto max-w-3xl text-center">
-          <span className="text-gold-shine text-glow font-display mx-auto block text-5xl font-bold italic leading-none">W</span>
           <h2 className="mt-6 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-balance">
             Tu competencia ya está online. Tú puedes ser mucho mejor.
           </h2>
