@@ -5,7 +5,7 @@ const PAYMENT_LINKS = {
   "golden-website": {
     mercadopago: "https://mpago.li/191tqip",
   },
-  "Exclusive website": {
+  "golden-plus": {
     mercadopago: "https://mpago.li/191tqip",
   },
 } as const;
@@ -25,7 +25,7 @@ const PLANS = {
     ],
   },
   "golden-plus": {
-    name: "Golden Plus",
+    name: "Sofisticated Luxury Web",
     price: "$129,99",
     before: "$259,99",
     features: [

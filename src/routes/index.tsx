@@ -199,9 +199,9 @@ function Index() {
             </h2>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 md:items-start">
-            <Reveal className="golden-border overflow-hidden rounded-3xl shadow-2xl shadow-brand-deep/10">
-              <div className="rounded-[calc(1.5rem-2px)] overflow-hidden bg-card">
+          <div className="grid gap-8 md:grid-cols-2">
+            <Reveal className="golden-border h-full overflow-hidden rounded-3xl shadow-2xl shadow-brand-deep/10">
+              <div className="h-full rounded-[calc(1.5rem-2px)] overflow-hidden bg-card">
               <div className="bg-gold-shine px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-deep">
                 GOLDEN WEBSITE
               </div>
@@ -246,11 +246,10 @@ function Index() {
               </div>
             </Reveal>
 
-             <div className="grid gap-8 md:grid-cols-2 md:items-start">
-            <Reveal className="golden-border overflow-hidden rounded-3xl shadow-2xl shadow-brand-deep/10">
-              <div className="rounded-[calc(1.5rem-2px)] overflow-hidden bg-card">
+            <Reveal className="luxury-border h-full overflow-hidden rounded-3xl shadow-2xl shadow-brand-deep/10">
+              <div className="h-full rounded-[calc(1.5rem-3px)] overflow-hidden bg-card">
               <div className="bg-gold-shine px-8 py-5 text-center text-sm font-semibold uppercase tracking-widest text-brand-deep">
-                EXCLUSIVE WEBSITE
+                SOFISTICATED LUXURY WEB
               </div>
               <div className="p-8 sm:p-10">
                 <ul className="space-y-4">
@@ -278,17 +277,18 @@ function Index() {
                     Antes: <span className="line-through">$259,99</span>
                   </p>
                   <div className="mt-2 flex items-baseline justify-center gap-2">
-                    <span className="text-5xl font-extrabold tracking-tight text-brand-gold sm:text-6xl">$129,99</span>
+                    <span className="text-gold-shine text-5xl font-extrabold tracking-tight sm:text-6xl">$129,99</span>
                     <span className="text-muted-foreground">/proyecto</span>
                   </div>
                   <a
-                    href="/checkout?plan=exclusive-website"
-                    className="mt-8 block w-full rounded-full bg-brand-gold py-4 text-center text-base font-bold text-primary-foreground shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
+                    href="/checkout?plan=golden-plus"
+                    className="bg-gold-shine mt-8 block w-full rounded-full py-4 text-center text-base font-bold text-brand-deep shadow-lg shadow-brand-gold/25 transition-transform hover:scale-[1.02]"
                   >
                     Ordenar
                   </a>
                   <p className="mt-3 text-xs text-muted-foreground">50% hasta el 31 de Agosto.</p>
                 </div>
+              </div>
               </div>
             </Reveal>
           </div>
